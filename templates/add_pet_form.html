@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add a Pet</title>
+</head>
+<body>
+    <h1>Add a New Pet</h1>
+    <form method="post">
+        {{ form.hidden_tag() }}
+        {{ form.name.label }} {{ form.name }}<br>
+        {{ form.species.label }} {{ form.species }}<br>
+        {{ form.photo_url.label }} {{ form.photo_url }}<br>
+        {{ form.age.label }} {{ form.age }}<br>
+        {{ form.notes.label }} {{ form.notes }}<br>
+        <input type="submit" value="Add Pet">
+    </form>
+</body>
+</html>

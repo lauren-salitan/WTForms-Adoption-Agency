@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Pet</title>
+</head>
+<body>
+    <h1>Edit Pet</h1>
+    <form method="post">
+        {{ form.hidden_tag() }}
+        {{ form.photo_url.label }} {{ form.photo_url }}<br>
+        {{ form.notes.label }} {{ form.notes }}<br>
+        {{ form.available.label }} {{ form.available }}<br>
+        <input type="submit" value="Update Pet">
+    </form>
+</body>
+</html>
